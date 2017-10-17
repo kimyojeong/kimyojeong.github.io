@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="{{ site.baseurl }}/">
+          <h2 class="nav-title">{{ site.title }}</h2>
+        </a>
+        <ul>
+          <li>
+            <a href="{{ '/about' | prepend: site.baseurl }}">About</a>
+          </li>
+          <li>
+            <a href="{{ site.baseurl }}/">Posts</a>
+          </li>
+          <li>
+            {% if site.github_username %}{% include icon-github.html username=site.github_username %}{% endif %}
+            
+            {% if site.facebook_username %}{% include icon-facebook.html username=site.facebook_username %}{% endif %}
+            
+            {% if site.twitter_username %}{% include icon-twitter.html username=site.twitter_username %}{% endif %}
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      {{ content }}
+    </main>
+
+    <footer>
+      <span>
+        &copy; <time datetime="{{ site.time }}">{{ site.time | date: '%Y' }}</time> {{ site.author.name }}. Made with Jekyll using the <a href="https://github.com/chesterhow/tale/">Tale</a> theme.
+      </span>
+    </footer>
+
+    {% include logger.html %}
+
+    <script type="text/javascript" src="/assets/javascripts/bundle.js" charset="utf-8"></script>
+    
+    <script>
+      $(function () {
+        $('.emoji').attr('align', 'absmiddle');
+      });
+    </script>
+
+  </body>
+</html>

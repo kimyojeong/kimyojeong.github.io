@@ -1,0 +1,39 @@
+{
+  "name": "kimyojeong.github.io",
+  "version": "0.0.1",
+  "description": "반짝반짝 ♦ ♦♦ ♦♦",
+  "main": "bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimyojeong/kimyojeong.github.io.git"
+  },
+  "keywords": [
+    "jekyll",
+    "webpack",
+    "react"
+  ],
+  "authors": [
+    {
+      "name": "Kim Minjeong",
+      "email": "kimyojeong@gmail.com"
+    }
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kimyojeong/kimyojeong.github.io/issues"
+  },
+  "homepage": "https://github.com/kimyojeong/kimyojeong.github.io#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "react": "^15.6.2",
+    "react-addons-update": "^15.6.2",
+    "react-dom": "^15.6.2",
+    "webpack": "^2.1.0-beta.22"
+  }
+}
