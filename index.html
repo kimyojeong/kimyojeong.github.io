@@ -3,10 +3,6 @@ layout: default
 title: Home
 ---
 
-{% if jekyll.environment == "development" %}
-<div id="root"></div>
-{% endif %}
-
 <div class="catalogue">
   {% for post in paginator.posts %}
     <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">

@@ -39,14 +39,20 @@
   &-profile {
     padding: 3rem 0;
 
-    &-left{
-      width: 70%;
+    &-thumb{
+      margin-right:3rem;
+      width: 5.5rem;
       float:left;
+
+      img{
+        width:100%;
+        margin:0;
+        border-radius:50%;
+      }
     }
 
-    &-right{
-      width: 30%;
-      float:right;
+    &-desc{
+      float:left;
     }
 
     @extend %clearfix;
