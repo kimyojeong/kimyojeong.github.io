@@ -2,56 +2,62 @@
 layout: default
 ---
 
-<div class="post">
-  <div class="post-info">
-    <span>Written by</span>
-    {% if page.author %}
-        {{ page.author }}
-    {% else %}
-        {{ site.author.name }}
-    {% endif %}
-
-    {% if page.date %}
-      <br>
-      <span>on&nbsp;</span><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
-    {% endif %}
-  </div>
-
-  <h1 class="post-title">{{ page.title }}</h1>
-  <div class="post-line"></div>
-
-  {{ content }}
-  
-  <div class="post-profile">
-    {% if site.author.thumbnail %}
-    <div class="post-profile-thumb">
-      <img src="{{ site.url }}/assets/images/{{ site.author.thumbnail }}" alt="{{ site.author.name }}">
+<!-- Post Header -->
+<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}assets/images/post-bg.jpg{% endif %}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>{{ page.title }}</h1>
+                    {% if page.subtitle %}
+                    <h2 class="subheading">{{ page.subtitle }}</h2>
+                    {% endif %}
+                    <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.author.name }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
+                </div>
+            </div>
+        </div>
     </div>
-    {% endif %}
+</header>
 
-    <div class="post-profile-desc">
-      <p><strong>{{ site.author.name }}</strong></p>
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
-      <p>
-        {{ site.description }}
-        <br>
-        {% if site.github_username %}{% include icon-github.html username=site.github_username %}{% endif %}
-        {% if site.facebook_username %}{% include icon-facebook.html username=site.facebook_username %}{% endif %}
-        {% if site.twitter_username %}{% include icon-twitter.html username=site.twitter_username %}{% endif %}
-        {% include icon-email.html useremail=site.author.email %}
-        {% include icon-rss.html %}
-      </p>
+				{{ content }}
+                
+                {% include profile.html %}
+                
+                <div>
+                  <iframe src="//www.facebook.com/plugins/like.php?href={{ page.url | prepend: site.url }}&amp;send=false&amp;layout=button_count&amp;width=61&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=lucida+grande&amp;height=21" scrolling="no" frameborder="0" allowtransparency="true" height="20" width="61"></iframe>
+                  <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ page.url | prepend: site.url }}" data-count="horizontal"></a>
+                  <div style="display: inline;"><div class="g-plus" data-action="share" data-href="{{ page.url | prepend: site.url }}"></div></div>
+                </div>
+
+                <div class="fb-comments" data-href="{{ page.url | prepend: site.url }}" data-width="750" data-numposts="5"></div>
+
+                <hr>
+
+                <ul class="pager">
+                    {% if page.previous.url %}
+                    <li class="previous">
+                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
+                    </li>
+                    {% endif %}
+                    {% if page.next.url %}
+                    <li class="next">
+                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
+                    </li>
+                    {% endif %}
+                </ul>
+
+            </div>
+        </div>
     </div>
-  </div>
-</div>
+</article>
 
-<div>
-  <iframe src="//www.facebook.com/plugins/like.php?href={{ page.url | prepend: site.url }}&amp;send=false&amp;layout=button_count&amp;width=61&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=lucida+grande&amp;height=21" scrolling="no" frameborder="0" allowtransparency="true" height="20" width="61"></iframe>
-  <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ page.url | prepend: site.url }}" data-count="horizontal"></a>
-  <div style="display: inline;"><div class="g-plus" data-action="share" data-href="{{ page.url | prepend: site.url }}"></div></div>
-</div>
-
-<div class="fb-comments" data-href="{{ page.url | prepend: site.url }}" data-width="800" data-numposts="5"></div>
+<hr>
 
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -63,14 +69,3 @@ layout: default
 }(document, 'script', 'facebook-jssdk'));</script>
 <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
-
-<div class="pagination">
-  {% if page.next.url %}
-    <a href="{{ page.next.url | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
-  {% endif %}
-  {% if page.previous.url %}
-    <a href="{{ page.previous.url | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
-  {% endif %}
-
-  <a href="#" class="top">Top</a>
-</div>

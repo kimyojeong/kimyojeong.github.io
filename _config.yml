@@ -14,19 +14,23 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: 반짝반짝 ✨
+header-img: assets/images/home-bg.jpg
 email: kimyojeong@gmail.com
+copyright_name: Kimyojeong
 description: >- # this means to ignore newlines until "baseurl:"
-  C#, Node.js, Ruby, React, 스노우보드
+  C#, ASP.Net, Node.js, 스노우보드
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kimyojeong.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: kimyojeong
+# twitter_username: kimyojeong
 github_username:  kimyojeong
 facebook_username:  kimyojeong
+email_username:  kimyojeong@gmail.com
 facebook_appid: 1183709345094986
-google_analytics_token: UA-108160687-1
 disqus_short_name: kimyojeong
-permalink: pretty
-paginate: 5
+
+# Google Analytics
+# To enable google analytics, uncomment below line with a valid Google Tracking ID
+google_tracking_id: UA-108160687-1
 
 # Assets
 sass:
@@ -47,6 +51,9 @@ plugins:
   - jekyll-gist
   - jekyll-paginate
   - jemoji
+highlighter: rouge
+permalink: pretty
+paginate: 5
 
 # About
 author:

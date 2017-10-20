@@ -1,0 +1,10 @@
+<div id="profile" data-json="{'baseUrl': '{{ site.url }}', 'author': {
+    'name': '{{ site.author.name }}',
+    'thumbnail': '{{ "/assets/images/profile.jpg" | prepend: site.baseurl }}',
+    'description': '{{ site.description }}',
+    'rss': '{{ "/feed.xml" | prepend: site.baseurl }}',
+    'twitter': '{{ site.twitter_username }}',
+    'facebook': '{{ site.facebook_username }}',
+    'github': '{{ site.github_username }}',
+    'email': '{{ site.email_username }}'
+}}"></div>
