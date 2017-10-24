@@ -10,7 +10,7 @@ class Profile extends Component {
           </div>
       
           <div className="post-profile-desc">
-            <strong>{ this.props.author.name }</strong>
+            <a href="/about"><strong>{ this.props.author.name }</strong></a>
             <br />
             { this.props.author.description }
             <br />

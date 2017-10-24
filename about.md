@@ -13,10 +13,22 @@ header-img: "assets/images/about-bg.jpg"
 ![alt text](/assets/images/profile1.jpg "The Botfather."){:target="_blank" style="width: 400px"}
 
 # C\#, ASP.NET, Node.js
+### SQLServer, MongoDB
 #### Testing, Development, Project Management
 ##### Planning, User Flows
 ### 스노우보드, 필라테스
 ##### React, SASS, JavaScript
+
+<div id="profile" data-json="{'baseUrl': '{{ site.url }}', 'author': {
+    'name': '{{ site.author.name }}',
+    'thumbnail': '{{ "/assets/images/profile.jpg" | prepend: site.baseurl }}',
+    'description': '{{ site.description }}',
+    'rss': '{{ "/feed.xml" | prepend: site.baseurl }}',
+    'twitter': '{{ site.twitter_username }}',
+    'facebook': '{{ site.facebook_username }}',
+    'github': '{{ site.github_username }}',
+    'email': '{{ site.email_username }}'
+}}"></div>
 
 ---
 

@@ -206,6 +206,7 @@ hr.small {
 .post-profile {
   padding: 5rem 0; }
   .post-profile-thumb {
+    display: none;
     margin-right: 3rem;
     width: 8.5rem;
     float: left; }
@@ -213,8 +214,12 @@ hr.small {
       width: 100%;
       margin: 0;
       border-radius: 50%; }
+    @media only screen and (min-width: 768px) {
+      .post-profile-thumb {
+        display: block; } }
   .post-profile-desc {
-    float: left; }
+    float: left;
+    color: gray; }
     .post-profile-desc p {
       margin: 0; }
   .post-profile .icon > svg,

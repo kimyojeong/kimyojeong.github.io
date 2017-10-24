@@ -22221,9 +22221,13 @@ var Profile = function (_Component) {
           'div',
           { className: 'post-profile-desc' },
           _react2.default.createElement(
-            'strong',
-            null,
-            this.props.author.name
+            'a',
+            { href: '/about' },
+            _react2.default.createElement(
+              'strong',
+              null,
+              this.props.author.name
+            )
           ),
           _react2.default.createElement('br', null),
           this.props.author.description,

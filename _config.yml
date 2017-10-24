@@ -21,7 +21,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   C#, ASP.Net, Node.js, 스노우보드
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kimyojeong.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-# twitter_username: kimyojeong
+twitter_username: kimyojeong
 github_username:  kimyojeong
 facebook_username:  kimyojeong
 email_username:  kimyojeong@gmail.com

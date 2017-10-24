@@ -278,6 +278,7 @@ hr.small {
       padding: 5rem 0;
   
       &-thumb{
+		display:none;
         margin-right:3rem;
         width: 8.5rem;
         float:left;
@@ -287,10 +288,14 @@ hr.small {
           margin:0;
           border-radius:50%;
         }
+		@media only screen and (min-width: 768px) {
+			display:block;
+		}
       }
   
       &-desc{
-        float:left;
+		float:left;
+		color:$gray;
         
         p {
           margin:0;
@@ -306,7 +311,7 @@ hr.small {
 			  vertical-align: middle;
 	  
 			  path {
-				  fill: $gray-dark;
+				  fill: $gray-light;
 			  }
 		  }
 	  }
