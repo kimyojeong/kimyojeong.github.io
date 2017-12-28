@@ -3,7 +3,7 @@ layout:     post
 title:      "Faker - Legends never die."
 subtitle:   "SK Telecom T1 vs. Misfits / 2017 World Championship"
 date:       2017-10-23 14:17:00 +0900
-header-img: "assets/images/20171024_134951151.jpg"
+header-img: "assets/images/2017/20171024_134951151.jpg"
 ---
 
 SKT vs. MSF, 3:2 접전 끝에 승리.
