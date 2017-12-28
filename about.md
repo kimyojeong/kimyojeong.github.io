@@ -15,7 +15,6 @@ header-img: "assets/images/about-bg.jpg"
 # C\#, ASP.NET, Node.js
 ### SQLServer, MongoDB
 #### Testing, Development, Project Management
-##### Planning, User Flows
 ### 스노우보드, 필라테스
 ##### React, SASS, JavaScript
 
