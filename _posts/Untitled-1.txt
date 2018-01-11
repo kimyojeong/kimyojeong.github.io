@@ -4,3 +4,7 @@
 │     Run npm i -g npm to update      │
 │                                     │
 ╰─────────────────────────────────────╯
+
+git add .
+git commit -m ""
+git push -u origin master
