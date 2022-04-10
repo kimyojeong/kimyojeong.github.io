@@ -16,15 +16,16 @@
 title: 반짝반짝 ✨
 header-img: assets/images/home-bg.jpg
 email: kimyojeong@gmail.com
-copyright_name: Kimyojeong
+copyright_name: kimyojeong.github.io
 description: >- # this means to ignore newlines until "baseurl:"
-  C#, ASP.Net, Node.js, 스노우보드
+  C#, .NET, 스노우보드
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kimyojeong.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: kimyojeong
-github_username:  kimyojeong
-facebook_username:  kimyojeong
-email_username:  kimyojeong@gmail.com
+# twitter_username: kimyojeong
+github_username: kimyojeong
+# facebook_username: kimyojeong
+# instagram_username: rlalaswjd
+email_username: kimyojeong@gmail.com
 facebook_appid: 1183709345094986
 disqus_short_name: kimyojeong
 
@@ -44,7 +45,7 @@ sass:
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-clean-blog
 plugins:
   - jekyll-assets
   - jekyll-feed

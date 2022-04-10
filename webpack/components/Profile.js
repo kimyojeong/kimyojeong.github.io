@@ -8,7 +8,6 @@ class Profile extends Component {
           <div className="post-profile-thumb">
             <img src={ this.props.author.thumbnail } alt={ this.props.author.name } />
           </div>
-      
           <div className="post-profile-desc">
             <a href="/about"><strong>{ this.props.author.name }</strong></a>
             <br />
@@ -19,6 +18,7 @@ class Profile extends Component {
                 rss={ this.props.author.rss }
                 twitter={ this.props.author.twitter }
                 facebook={ this.props.author.facebook }
+                instagram={ this.props.author.instagram }
                 github={ this.props.author.github }
                 email={ this.props.author.email } />
           </div>

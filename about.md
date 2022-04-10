@@ -10,19 +10,20 @@ header-img: "assets/images/about-bg.jpg"
 <!-- Place this tag in your head or just before your close body tag. -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 
-![alt text](/assets/images/profile1.jpg "The Botfather."){:target="_blank" style="width: 400px"}
+![alt text](/assets/images/profile1.jpg "곰"){:target="_blank" style="width: 400px"}
 
-# C\#, ASP.NET, Node.js
-### SQLServer, MongoDB
+# C\#, .NET
+### SQLServer
 #### Testing, Development, Project Management
-### 스노우보드, 필라테스
-##### React, SASS, JavaScript
+### Snowboarding
+#### Swimming
 
 <div id="profile" data-json="{'baseUrl': '{{ site.url }}', 'author': {
     'name': '{{ site.author.name }}',
     'thumbnail': '{{ "/assets/images/profile.jpg" | prepend: site.baseurl }}',
     'description': '{{ site.description }}',
     'rss': '{{ "/feed.xml" | prepend: site.baseurl }}',
+    'instagram': '{{ site.instagram_username }}',
     'twitter': '{{ site.twitter_username }}',
     'facebook': '{{ site.facebook_username }}',
     'github': '{{ site.github_username }}',

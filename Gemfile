@@ -8,7 +8,7 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 3.6.0"
+gem "jekyll", "~> 4.2.2"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.0"
@@ -29,3 +29,8 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+
+# Added at 2022-04-10 02:58:55 +0900 by desktop-5vahro5\jo:
+gem "webrick", "~> 1.7"
+
+gem "jekyll-theme-clean-blog"

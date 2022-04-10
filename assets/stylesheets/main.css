@@ -227,10 +227,11 @@ hr.small {
     display: inline-block;
     width: 16px;
     height: 16px;
+    margin-right: 3px;
     vertical-align: middle; }
     .post-profile .icon > svg path,
     .post-profile .icon img path {
-      fill: #eee; }
+      fill: gray; }
 
 .section-heading {
   font-size: 36px;
