@@ -8,3 +8,4 @@ assets/bundle.js
 .vscode
 *.log
 *.lock
+*-lock.json
