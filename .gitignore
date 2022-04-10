@@ -5,3 +5,6 @@ _site
 node_modules
 assets/bundle.js
 .jekyll-cache
+.vscode
+*.log
+*.lock
