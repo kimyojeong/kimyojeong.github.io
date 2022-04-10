@@ -11,9 +11,9 @@ published:  true
 
 ### 텔레그램과 이벤트, 그리고 Botfather
 
-그러니까 작년 겨울(16년 1월), 회사에서 텔레그램 채널을 이용한 이벤트를 진행하였다. 채널 가입 회원에게 인게임 아이템을 주는 이벤트로, 사용자나 운영자나 매우 번거롭고 헛점이 많은 이벤트라 방법을 찾던 중 **텔래그램 봇** 개발을 시작했다. 이미 기획이 완료된 후 업무 요청이 들어온 터라 R&amp;D 결과를 적용할 수 없었지만 잘 만들어진 오픈 소스를 활용한 상호 작용은 언제나 기분 좋은 만족감을 준다.
+그러니까 작년 겨울(16년 1월), 회사에서 텔레그램 채널을 이용한 이벤트를 진행하였다. 채널 가입 회원에게 인게임 아이템을 주는 이벤트로, 사용자나 운영자나 매우 번거롭고 헛점이 많은 이벤트라 방법을 찾던 중 **텔래그램 봇** 개발을 시작했다. 이미 기획이 완료된 후 업무 요청이 들어온 터라 R&amp;D 결과를 적용할 수 없었지만 잘 만들어진 오픈 소스와의 상호 작용은 언제나 기분 좋은 만족감을 준다.
 
-**작업 전 만든 화면 설계 원페이지.pptx**
+**작업 전 만든 화면 설계 원페이저**
 
 [![텔레그램 봇 개발 계획.](/assets/images/2017/20171016_pptx.png){:style="width: 200px"}](/assets/images/2017/20171016_pptx.png){:target="_blank"}
 
@@ -35,7 +35,7 @@ published:  true
 
 ---
 
-### 1. 텔레그램 봇 등록`TODO`
+### 1. 텔레그램 봇 등록
 
 <!-- 
 #### Bot API`TODO`
@@ -43,9 +43,9 @@ published:  true
 
 Bot developers can also make use of our [Payments API](https://core.telegram.org/bots/payments) to accept **payments** from Telegram users around the world. -->
 
-### 2. API 서버 만들기`TODO`
+### 2. API 서버 만들기
 
-### 3. 웹훅(WebHook) 설정`TODO`
+### 3. 웹훅(WebHook) 설정
 
 ``` shell
 curl
