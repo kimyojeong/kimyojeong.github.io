@@ -45,7 +45,7 @@ sass:
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-clean-blog
+theme: minima
 plugins:
   - jekyll-assets
   - jekyll-feed

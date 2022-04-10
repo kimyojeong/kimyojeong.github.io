@@ -32,5 +32,3 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Added at 2022-04-10 02:58:55 +0900 by desktop-5vahro5\jo:
 gem "webrick", "~> 1.7"
-
-gem "jekyll-theme-clean-blog"
